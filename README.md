@@ -366,20 +366,20 @@ ontime = input("Was car returned before 11 pm? y or n").lower()
 days_rented = int(input("How many days was car rented?"))
 day_rented = input("What day was the car rented?").capitalize()
 cost_per_day = 100
-if ontime (A):
+if ontime (A.):
     days_rented += 1
-if day_rented (B):
+if day_rented (B.):
     total = (days_rented * cost_per_day) * 0.9
-elif day_rented (C):
+elif day_rented (C.):
     total = (days_rented * cost_per_day) * 0.8
 else:
     total = days_rented * cost_per_day
 print("Cost of the car rental is: $", total)
 ```
 
-(A) 1. !="n" 2. =="n" (C) 3. =="y"
-(B) 1. =="Sunday" 2. >="Sunday" 3. is "Sunday"
-(C) 1. =="Thursday" 2. <= "Thursday" 3. is "Thursday"
+A. 1. !="n" 2. =="n" (C) 3. =="y"
+B. 1. =="Sunday" 2. >="Sunday" 3. is "Sunday"
+C. 1. =="Thursday" 2. <= "Thursday" 3. is "Thursday"
 
 ```python
 answer_18 = dict()
@@ -692,3 +692,162 @@ G. `Y`
 ```python
 answer_30 = None
 ```
+
+## 31.（連連看）你設計了一個程式要依學生的成績來顯示等級，它的規定如下：
+
+|Percentage range|Letter grade|
+|----------------|------------|
+|90 through 100|A|
+|80 through 89|B|
+|70 through 79|C|
+|60 through 69|D|
+|0 through 59|F|
+
+如果使用者輸入 90，則輸出應該是 `"Your grade is: A"`，如果使用者輸入 89，則輸出應該為 `"Your grade is: B"`，你要如何完成這段程式？請選擇適當的程式碼片段填寫缺漏處：
+
+```python
+grade = int(input("Enter a numeric grade"))
+(A.)
+    letter_grade = "A"
+(B.)
+    letter_grade = "B"
+(C.)
+    letter_grade = "C"
+(D.)
+    letter_grade = "D"
+else:
+    letter_grade = "F
+print("Your letter grade is: ", letter_grade)
+```
+
+A. 從 1. 至 4. 擇一
+B. 從 5. 至 8. 擇一
+C. 從 9. 至 12. 擇一
+D. 從 13. 至 16. 擇一
+
+1. `if grade <= 90:`
+2. `if grade >= 90:`
+3. `elif grade > 90:`
+4. `elif grade >= 90:`
+5. `if grade > 80:`
+6. `if grade >= 80:`
+7. `elif grade > 80:`
+8. `elif grade >= 80:`
+9. `if grade > 70:`
+10. `if grade >= 70:`
+11. `elif grade > 70:`
+12. `elif grade >= 70:`
+13. `if grade > 60:`
+14. `if grade >= 60:`
+15. `elif grade > 60:`
+16. `elif grade >= 60:`
+
+```python
+answer_31 = dict()
+```
+
+## 32.（連連看）你要設計一款以使用者年齡進行電影分級的程式，必須符合以下要求：
+
+- 任何 18 歲或以上的人會顯示「限制級」。
+- 任何 13 歲或以上但小於 18 歲的人會顯示「輔導級」。
+- 任何 12 歲或更年輕的人會顯示「普通級」。
+- 如果年齡未知，則會顯示「未知」。
+
+你需要完成程式碼以符合要求，應該要如何完成這段程式碼？
+
+```python
+def get_rating(age):
+    if (A.)
+    elif (B.)
+    elif (C.)
+    else (D.)
+    return rating
+```
+
+程式碼片段
+
+1. `age < 13: rating = "普通級"`
+2. `age < 18: rating = "輔導級"`
+3. `:rating = "限制級"`
+4. `age is None: rating = "未知"`
+
+```python
+answer_32 = dict()
+```
+
+## 33.（單選題）你用學生的成績（`grade`）及排名（`rank`）編寫程式碼來決定最後成績：
+
+```python
+if grade > 80 and rank >= 3:
+    grade += 10
+if grade > 70 and rank > 3:
+    grade +=5
+else:
+    grade -= 5
+```
+
+當 `grade = 76`、`rank = 3` 時，執行程式碼的輸出是？
+
+1. `71`
+2. `76`
+3. `81`
+4. `86`
+
+```python
+answer_33 = None
+```
+
+## 34.（連連看）你正在編寫一個函式來判別負數與非負數，這個函式必須符合以下要求：
+
+- 如果 `a` 是負數，則回傳 `"The result is a negative number"`
+- 如果 `a` 不是負數，則為非負數，再繼續判別。
+- 如果 `a` 大於 0 則回傳 `"The result is a positive number"`，否則回傳 `"The result is a zero"`
+
+你要如何完成這段程式碼？
+
+```python
+def reResult(a):
+    (A.)
+        answer = "The result is a negative number"
+    (B.)
+        (C.)
+            answer = "The result is a positive number"
+        (D.)
+            answer = "The result is a zero"
+    return answer
+```
+
+1. `if a < 0:`
+2. `if a > 0:`
+3. `else:`
+4. `elif:`
+
+```python
+answer_34 = dict()
+```
+
+## 35.（連連看）你設計了一個電影票收費的函式，票價的規則如下：
+
+- 5 歲以下，免費入場
+- 5 歲及以上的學生，60 元
+- 5 歲到 17 歲但不是學生，120 元
+- 17 歲以上但不是學生，180 元
+
+你要如何完成這段程式碼？
+
+```python
+def ticket_fee(age, school):
+    fee = 0
+    (A.)
+        fee = 60
+    (B.)
+        (C.)
+            fee = 120
+        else:
+            fee = 180
+    return fee
+```
+
+1. `if age >= 5 and school = True:`
+2. `if age >= 5 and school = False:`
+3. `if age <= 17:`

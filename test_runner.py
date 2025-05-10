@@ -87,6 +87,27 @@ class TestProjectITSCertification(unittest.TestCase):
         self.assertEqual(answers.answer_29["C"], 10)
     def test_30(self):
         self.assertEqual(answers.answer_30, 1)
+    def test_31(self):
+        self.assertEqual(answers.answer_31["A"], 2)
+        self.assertEqual(answers.answer_31["B"], 4)
+        self.assertEqual(answers.answer_31["C"], 4)
+        self.assertEqual(answers.answer_31["D"], 4)
+    def test_32(self):
+        self.assertEqual(answers.answer_32["A"], 4)
+        self.assertEqual(answers.answer_32["B"], 1)
+        self.assertEqual(answers.answer_32["C"], 2)
+        self.assertEqual(answers.answer_32["D"], 3)
+    def test_33(self):
+        self.assertEqual(answers.answer_33, 1)
+    def test_34(self):
+        self.assertEqual(answers.answer_34["A"], 1)
+        self.assertEqual(answers.answer_34["B"], 3)
+        self.assertEqual(answers.answer_34["C"], 2)
+        self.assertEqual(answers.answer_34["D"], 3)
+    def test_35(self):
+        self.assertEqual(answers.answer_35["A"], 1)
+        self.assertEqual(answers.answer_35["B"], 2)
+        self.assertEqual(answers.answer_35["C"], 3)
 
 chapter_name = "IT Specialist Certification - Python"
 answers = importlib.import_module("answers")
