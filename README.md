@@ -851,3 +851,172 @@ def ticket_fee(age, school):
 1. `if age >= 5 and school = True:`
 2. `if age >= 5 and school = False:`
 3. `if age <= 17:`
+
+```python
+answer_35 = dict()
+```
+
+## 36.（連連看）你設計一個 Python 程式檢查使用者輸入的數字是 1 位數或者 2 位數，其中規定輸入的值必須是正整數，你要如何完成這段程式碼？
+
+```python
+num = int(input("Enter a number with 1 or 2 digits:"))
+if num > 0:
+    (A.)
+        digits = "1"
+    (B.)
+        digits = "2"
+    (C.)
+        digits = ">2"
+    print(digits + " digits.")
+elif num == 0:
+    print("The number is 0")
+else:
+    print("The number is not a positive number")
+```
+
+1. `if num < 10:`
+2. `if num < 100:`
+3. `elif num < 100:`
+4. `else:`
+
+```python
+answer_36 = dict()
+```
+
+## 37.（連連看）你正在設計一個 Python 程式遊戲，讓參加的人從 1 到 100 之間猜一個數字，最多有三次機會，程式碼如下：
+
+```python
+from random import randint # 01
+target = randint(1, 100) # 02
+chance = 1 # 03
+print("Guess an integer from 1 to 100. You will have 3 chances.") # 04
+# 05
+    guess = int(input("Guess an integer:")) # 06
+    if guess > target: # 07
+        print("Guess is too high") # 08
+    elif guess < target: # 09
+        print("Guess is too low") # 10
+    else: # 11
+        print("Guess is just right") # 12
+# 13
+# 14
+```
+
+程式可以讓使用者猜三次，如果猜出正確數字即停止程式，你要如何完成列號 05、13、14 的程式碼？請將正確的程式碼片段與問題相連。
+
+問題
+
+A. 在 05 列你要使用哪個程式碼片段？
+B. 在 13 列你要使用哪個程式碼片段？
+C. 在 14 列你要使用哪個程式碼片段？
+
+程式碼片段
+
+1. `while chance <= 3:`
+2. `while chance < 3:`
+3. `break`
+4. `pass`
+5. `chance += 1`
+6. `chance = 2`
+
+```python
+answer_37 = dict()
+```
+
+## 38.（連連看）在以下的程式碼中，要加入哪些程式碼片段可以正確執行？
+
+```python
+aList = [1, 2, 3]
+bList = ["a", "b", "c"]
+(A.)
+    print("aList is equal to bList")
+(B.)
+    print("aList is not equal to bList")
+```
+
+1. `if aList == bList:`
+2. `elif aList == bList:`
+3. `else:`
+4. `else if:`
+
+```python
+answer_38 = dict()
+```
+
+## 39.（連連看）你設計了一個 Python 程式來檢查英文姓名的大小寫，請選擇四個程式碼片段完成這個程式。
+
+```python
+(A.)
+(B.)
+(C.)
+(D.)
+```
+
+1. `name = input("Enter your English name:")`
+2. 
+
+```python
+elif name.lower() == name:
+    print(name, "is all lower case.")
+```
+
+3. 
+
+```python
+else:
+    print("name", "is upper case.")
+```
+
+4. 
+
+```python
+else:
+    print("name", "is mixed case.")
+```
+
+5. 
+
+```python
+if name.upper() == name:
+    print(name, "is all upper case.")
+```
+
+6.
+
+```python
+else:
+    print("name", "is lower case.")
+```
+
+```python
+answer_39 = dict()
+```
+
+## 40.（連連看）公司決定要幫所有年薪不到 50 萬的員工調升基本工資 5%，並給予獎金 1 萬元：
+
+```
+新工資 = 目前工資 * 105% + 10000
+```
+
+`salaryList` 是由員工資料庫取得，你要如何完成這段程式碼？
+
+```python
+(A.)
+    if salaryList[index] >= 500000:
+        (B.)
+    salaryList[index] = (salaryList[index] * 1.05) + 10000
+```
+
+缺漏處
+
+A. 從 1. 至 4. 擇一
+B. 從 5. 至 8. 擇一
+
+1. `for index in range(len(salaryList) + 1):`
+2. `for index in range(len(salaryList) - 1):`
+3. `for index in range(len(salaryList)):`
+4. `for index in salaryList:`
+5. `exit()`
+6. `continue`
+7. `break`
+8. `end`
